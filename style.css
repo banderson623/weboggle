@@ -1,0 +1,47 @@
+table#board {
+    font-size:2em;
+    font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+    font-weight:bold;
+/*    background:#DCCCB3;*/
+}
+
+table#board td{
+    border:2px solid #E0E4C6;
+    border-bottom-color:#B8BCA3;
+    border-right-color:#B8BCA3;
+    width:2em;
+    height:2em;
+    text-align: center;
+    background-color:#FAFFDD;
+/*    text-shadow: #B2A388 1px 1px 5px;*/
+}
+
+
+table#board td:hover {
+/*    background-color:#F0F4D4;*/
+/*    border-color:red;*/
+    color:red;
+    -webkit-box-shadow:#B2A388 1px 1px 10px;
+    
+}
+
+table#board td:hover span {
+    font-size:1.6em !important;
+    -webkit-transform: rotate(0deg) !important;    
+/*    -webkit-transition: -webkit-transform 0.05s linear;*/
+    
+}
+
+table#board td span {
+    font-size:1.4em;
+    display:block;
+}
+
+/*table#board td span.rot1 {-webkit-transform: rotate(1deg);}
+table#board td span.rot2 {-webkit-transform: rotate(89deg);}
+table#board td span.rot3 {-webkit-transform: rotate(179deg);}
+table#board td span.rot4 {-webkit-transform: rotate(271deg);}*/
+/*.rot5 {-webkit-transform: rotate(-1deg);}
+.rot6 {-webkit-transform: rotate(-2deg);}
+.rot7 {-webkit-transform: rotate(-4deg);}
+.rot8 {-webkit-transform: rotate(-6deg);}*/
