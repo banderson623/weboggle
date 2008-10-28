@@ -34,7 +34,10 @@ function set_board_to(values){
         if(value == 'Q') value == "Qu";
         
         console.log(value);
-        // $('cell_' + i).insert(top: '<span class="letter">' + value + '</span>');
+        $('cell_' + i).update('<span class="letter">' + value + '</span>')
+        $('cell_' + i).down('span').addClassName('rot' + (Math.floor(Math.random()*3) + 1) )
+        
+        // $('cell_' + i).insert(top:'<span class="letter">' + value + '</span>');
         // $('cell_' + i).down('span').addClassName('rot' + (Math.floor(Math.random()*3) + 1) )
 	}
 }
