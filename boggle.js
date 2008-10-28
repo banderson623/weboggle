@@ -30,13 +30,18 @@ function set_board_to(values){
 	for(i=0; i<= (values.length -1); ++i){
         // console.log("Setting: cell_" + i);
         // console.log($("cell_" + i));
-        $('cell_' + i).update('<span class="letter">' + values[i] + '</span>');
-        $('cell_' + i).down('span').addClassName('rot' + (Math.floor(Math.random()*3) + 1) )
+        value = values[i];
+        if(value == 'Q') value == "Qu";
+        
+        console.log(value);
+        // $('cell_' + i).insert(top: '<span class="letter">' + value + '</span>');
+        // $('cell_' + i).down('span').addClassName('rot' + (Math.floor(Math.random()*3) + 1) )
 	}
 }
 
 cell_clicked = function(mouse_event){
-    console.log("Clicked!: " + mouse_event.target.inspect());
+    cell = mouse_event.target.up('td')
+    console.log("Clicked!: " + cell.id);
 }
 
 function add_observers_to_board(){
